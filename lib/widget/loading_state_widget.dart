@@ -38,7 +38,7 @@ class LoadingStateWidget extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.only(top: 8),
             child: Text(
-              LeoString.net_request_fail,
+              MyString.net_request_fail,
               style: TextStyle(color: LeoColor.hitTextColor, fontSize: 18),
             ),
           ),
@@ -47,7 +47,7 @@ class LoadingStateWidget extends StatelessWidget {
             child: OutlinedButton(
               onPressed: retry,
               child: Text(
-                LeoString.reload_again,
+                MyString.reload_again,
                 style: TextStyle(color: Colors.black87),
               ),
               style: ButtonStyle(

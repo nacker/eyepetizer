@@ -86,13 +86,13 @@ class _TabNavigationState extends State<TabNavigation> {
 
   List<BottomNavigationBarItem> _item() {
     return [
-      _bottomItem(LeoString.home, 'images/ic_home_normal.png',
+      _bottomItem(MyString.home, 'images/ic_home_normal.png',
           'images/ic_home_selected.png'),
-      _bottomItem(LeoString.discovery, 'images/ic_discovery_normal.png',
+      _bottomItem(MyString.discovery, 'images/ic_discovery_normal.png',
           'images/ic_discovery_selected.png'),
-      _bottomItem(LeoString.hot, 'images/ic_hot_normal.png',
+      _bottomItem(MyString.hot, 'images/ic_hot_normal.png',
           'images/ic_hot_selected.png'),
-      _bottomItem(LeoString.mine, 'images/ic_mine_normal.png',
+      _bottomItem(MyString.mine, 'images/ic_mine_normal.png',
           'images/ic_mine_selected.png'),
     ];
   }
@@ -117,7 +117,7 @@ class _TabNavigationState extends State<TabNavigation> {
     if (lastTime == null ||
         DateTime.now().difference(lastTime) > Duration(seconds: 2)) {
       lastTime = DateTime.now();
-      LeoToast.showTip(LeoString.exit_tip);
+      LeoToast.showTip(MyString.exit_tip);
       return false;
     } else {
       // 自动出栈
