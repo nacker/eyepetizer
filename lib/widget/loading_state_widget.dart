@@ -39,7 +39,7 @@ class LoadingStateWidget extends StatelessWidget {
             padding: const EdgeInsets.only(top: 8),
             child: Text(
               MyString.net_request_fail,
-              style: TextStyle(color: LeoColor.hitTextColor, fontSize: 18),
+              style: TextStyle(color: MyColor.hitTextColor, fontSize: 18),
             ),
           ),
           Padding(

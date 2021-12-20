@@ -9,7 +9,7 @@ TabBar tabBar({
   // 当前选中的标签字体颜色
   Color labelColor = Colors.black,
   // 未选中的标签字体颜色
-  Color unselectedLabelColor = LeoColor.hitTextColor,
+  Color unselectedLabelColor = MyColor.hitTextColor,
   // 下划线的颜色
   Color indicatorColor = Colors.black,
   // 下划线的大小
