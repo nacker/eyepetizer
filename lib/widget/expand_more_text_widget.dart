@@ -19,8 +19,8 @@ class ExpandMoreTextWidget extends StatelessWidget {
 
   const ExpandMoreTextWidget(this.text,
       {Key key,
-        this.trimCollapsedText = LeoString.more_text,
-        this.trimExpandedText = LeoString.less_text,
+        this.trimCollapsedText = MyString.more_text,
+        this.trimExpandedText = MyString.less_text,
         this.style,
         this.moreStyle,
         this.lessStyle,
