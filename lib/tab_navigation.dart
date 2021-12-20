@@ -117,7 +117,7 @@ class _TabNavigationState extends State<TabNavigation> {
     if (lastTime == null ||
         DateTime.now().difference(lastTime) > Duration(seconds: 2)) {
       lastTime = DateTime.now();
-      LeoToast.showTip(MyString.exit_tip);
+      MyToast.showTip(MyString.exit_tip);
       return false;
     } else {
       // 自动出栈

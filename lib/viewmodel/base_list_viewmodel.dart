@@ -55,7 +55,7 @@ abstract class BaseListViewModel<T, M extends PagingModel<T>>
         doExtraAfterRefresh();
       },
       fail: (e) {
-        LeoToast.showError(e.toString());
+        MyToast.showError(e.toString());
         refreshController.refreshFailed();
         viewState = ViewState.error;
       },
@@ -78,7 +78,7 @@ abstract class BaseListViewModel<T, M extends PagingModel<T>>
       refreshController.loadComplete();
       notifyListeners();
     }, fail: (e) {
-      LeoToast.showError(e.toString());
+      MyToast.showError(e.toString());
       refreshController.loadFailed();
     });
   }
