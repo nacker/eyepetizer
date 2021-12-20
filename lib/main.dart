@@ -1,4 +1,5 @@
 import 'dart:io';
+import 'package:eyepetizer/pages/video/video_detail_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
@@ -70,7 +71,7 @@ class _GetMaterialAppWidgetState extends State<GetMaterialAppWidget> {
       initialRoute: '/',
       getPages: [
         GetPage(name: '/', page: () => widget.child),
-        // GetPage(name: '/detail', page: () => VideoDetailPage()),
+        GetPage(name: '/detail', page: () => VideoDetailPage()),
       ],
     );
   }
